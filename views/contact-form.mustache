@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div style='color: red;' color='red' class="">
+      <ul>
+        {{#errors}}
+        <li>{{msg}}</li>
+        {{/errors}}
+      </ul>
+    </div>
+    <form class="" action="/contact" method="post">
+      <fieldset>
+        <div class="">
+          <input type="file" name="file" value="">
+          <label for="file">Upload</label>
+        </div>
+        <div class="">
+          <input type="text" name="name" value="" placeholder="Name:">
+          <label for="name">What is your name?</label>
+        </div>
+        <div class="">
+          <input type="email" name="email" value="" placeholder="Email:">
+          <label for="email">What is your email?</label>
+        </div>
+        <div class="">
+          <input type="text" name="Birthyear" value="" placeholder="Birthyear:">
+          <label for="Birthyear">What year were you born?</label>
+        </div>
+        <div class="">
+          <select class="" name="position">
+            <option value="">technical manager</option>
+            <option value="">developer</option>
+            <option value="">UI designer</option>
+            <option value="">graphic designer</option>
+          </select>
+          <label for="position">What is your position?</label>
+        </div>
+        <div class="">
+          <input type="password" name="password" value="" placeholder="Password:">
+          <label for="">What is your password?</label>
+        </div>
+        <div class="">
+          <input type="submit" name="submit" value="Submit!">
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
